@@ -23,8 +23,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## 更新日志
-
-最近更新 [01.20.2021](CHANGELOG.md)
+[最近更新 04.12.2021](CHANGELOG.md)
 
 
 ## 使用
@@ -35,6 +34,7 @@
 #必要
 npm install hexo-renderer-pug 
 npm install hexo-renderer-sass
+npm install hexo-generator-search
 
 #选择性安装
 # 如果需要添加订阅功能
@@ -59,6 +59,7 @@ user:
   avatar: /images/avatar.jpg
   location:
   description:
+  footnotes:
 
 # config you SNS
 social:
@@ -103,8 +104,15 @@ comment_utteranc:
   repo: Haojen/myBlogRepo # change to your blog repo
 ```
 
-#### 2. DISQUS
-开发中..
+#### 2. Valine
+使用文档： https://valine.js.org/quickstart.html
+
+```yaml
+comment_valine:
+  enable: true
+  appId:
+  appKey:
+```
 
 
 ### 夜间模式设置
@@ -122,6 +130,17 @@ appearance: auto
 ```yaml
 highlight:
   enable: false
+```
+
+## 统计
+配置谷歌和百度统计
+```yaml
+#Baidu Analytics**
+ba_track_id: 
+
+#Google Analytics
+ga_track_id: 
+ga_domain:
 ```
 	
 ## 创建 About 页面

@@ -1,5 +1,38 @@
 # Changelog
 
+## 04.12.2021
+- Add Postcard image hover zoom animate effect
+- Adjust page indicator top margin
+
+## 04.08.2021
+- Adjust layout details
+
+## 03.26.2021
+- Add Meta description
+- Add Disqus comment
+- Bug fix
+
+## 03.24.2021
+- Adjust header container max-width
+
+## 03.22.2021
+- Add Baidu Analytics
+- Add Google Analytics
+
+## 03.21.2021
+- Support search
+- User profile can be hidden
+
+## 03.12.2021
+- Add Valine comment system
+- Adjust about page padding on mobile devices
+
+## 03.08.2021
+- Add footnotes
+
+## 01.31.2021
+- Fix if no have 0 length category、tag
+
 ## 01.20.2021
 - Improve readability
 - Fix i18N bugs

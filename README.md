@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://haojen.github.io/Claudia-theme-blog/" rel="nofollow">Demo</a>
+  <a href="https://haojen.github.io/Claudia-theme-blog/" rel="nofollow">👉 Demo</a>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 ![cover](./screenshot/claudia-cover-v2.png)
 
 ## Changelog
-Recent update [01.20.2021](CHANGELOG.md)
+[Recent update 04.12.2021](CHANGELOG.md)
 
 ## How to Use
 
@@ -32,6 +32,7 @@ Install to Hexo blog root directory, **Not theme directory**
 ```bash
 npm install hexo-renderer-pug 
 npm install hexo-renderer-sass
+npm install hexo-generator-search
 
 # if you need RSS, you must be install this plugin
 npm install hexo-generator-feed
@@ -47,6 +48,7 @@ user:
   avatar: /images/avatar.jpg
   location:
   description:
+  footnotes:
 
 # config you SNS
 social:
@@ -88,11 +90,18 @@ Project repo: https://github.com/utterance/utterances
 ```yaml
 comment_utteranc:
   enable: true
-  repo: Haojen/myBlogRepo # change to your blog repo
+  repo: Haojen/myBlogRepo # Change to your blog repo
 ```
 
-#### 2. DISQUS
-developing..
+#### 2. Valine
+Documents： https://valine.js.org/quickstart.html
+
+```yaml
+comment_valine:
+  enable: true
+  appId:
+  appKey:
+```
 
 ### Appearance
 ```yaml
@@ -109,6 +118,17 @@ appearance: auto
 ```yaml
 highlight:
   enable: false
+```
+
+## Analytics
+Google Analytics and Baidu Analytics simple config:
+```yaml
+#Baidu Analytics**
+ba_track_id: 
+
+#Google Analytics
+ga_track_id: 
+ga_domain:
 ```
 
 ### Create About Page
